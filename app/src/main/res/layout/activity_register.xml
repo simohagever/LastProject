@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/simo"
+
+    android:orientation="vertical"
+    tools:context=".Register">
+
+
+    <TextView
+        android:id="@+id/logint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:fontFamily="cursive"
+        android:text="Register"
+        android:textSize="50dp"></TextView>
+
+    <EditText
+
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="12"
+        android:hint="first name"
+        android:gravity="center"
+        android:textSize="25dp"
+
+        android:textColorHint="@color/white"
+        android:layout_marginTop="10dp"
+        android:id="@+id/firstname"
+        ></EditText>
+
+    <EditText
+        android:textColor="@color/white"
+        android:maxLength="12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="last name"
+        android:gravity="center"
+        android:textColorHint="@color/white"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/lastname"
+        ></EditText>
+
+    <EditText
+        android:textColor="@color/white"
+        android:maxLength="12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  password"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:id="@+id/password"
+        ></EditText>
+
+    <EditText
+        android:textColor="@color/white"
+        android:maxLength="12"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password confirmation"
+        android:gravity="center"
+        android:textColorHint="@color/white"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/Epassword"
+        ></EditText>
+
+    <EditText
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="10dp"
+        android:id="@+id/email"
+        ></EditText>
+
+
+    <EditText
+        android:textColor="@color/white"
+        android:maxLength="12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="address"
+        android:gravity="center"
+        android:textColorHint="@color/white"
+
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/address"
+        ></EditText>
+
+    <Button
+        android:id="@+id/btnSendRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="send"
+        android:textSize="15dp"
+
+        android:background="@color/carmit"
+        ></Button>
+
+
+    <TextView
+        android:id="@+id/btnGoBackToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:hint="you already have an acount? Log in"
+
+        android:textSize="15dp"></TextView>
+    <Button
+        android:id="@+id/btnBackToHomepage"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:hint="back to home page"
+        android:textSize="15dp"
+
+        android:background="@color/carmit"
+        ></Button>
+
+</LinearLayout>

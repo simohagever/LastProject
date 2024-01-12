@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    tools:context=".HomePage">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+
+
+
+    ></TextView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btnNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menu_best"
+
+
+        ></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:hint="back to home page"
+        android:textSize="15dp"
+
+        android:background="@color/sara"
+        ></Button>
+
+
+</LinearLayout>

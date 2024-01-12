@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homePage"
+        android:title="home page"
+        android:icon="@drawable/home_page"
+        ></item>
+    <item
+        android:id="@+id/location"
+        android:title="new location"
+        android:icon="@drawable/location"
+        ></item>
+    <item
+        android:id="@+id/picture"
+        android:title="new picture"
+        android:icon="@drawable/picture"
+        ></item>
+</menu>

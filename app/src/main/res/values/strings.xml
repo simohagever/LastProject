@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LastProject</string>
+    <string name="open_nav">Open Navigation Bar</string>
+    <string name="close_nav">Close Navigayion Bar</string>
+</resources>
