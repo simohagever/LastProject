@@ -26,7 +26,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     private static final String COLUMN_ADDRESS = "Address";
 
 
-    MyDatabaseHelper(@Nullable Context context) {
+     public MyDatabaseHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
         this.context = context;
     }
@@ -137,7 +137,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
 
         return isExistreg;
     }
-    void addItem(String Fname, String Lname,String Password,String Email, String Address){
+    public void addItem(String Fname, String Lname,String Password,String Email, String Address){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 

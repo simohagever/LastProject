@@ -13,13 +13,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.lastproject.UI.Register.Register;
+import com.example.lastproject.UI.homePage.HomePage;
+import com.example.lastproject.repstory.repostory;
+
 import java.io.Serializable;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button btnlogin,btnMlogin,btnDelete;
 
-    private MyDatabaseHelper myDatabaseHelper;
+    private repostory rp;
     private EditText Epass,Eemail;
 
 
@@ -35,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnDelete = findViewById(R.id.btnDelete);
         btnDelete.setOnClickListener(this);
 
-        myDatabaseHelper = new MyDatabaseHelper(this);
+        rp = new repostory(this);
 //        Epass.setClickable(true);
 
 
@@ -62,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                         Eemail.setError("the email doesn't found");
 //                        return;
 //                    }
-                    if(!(myDatabaseHelper.isExistsLogin(email,pass,1) ) ){
+                    if(!(rp.getMyDatabaseHelper().isExistsLogin(email,pass,1))){
                         Epass.setError("the pass doesn't found");
                         return;
                     }
@@ -115,7 +119,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         if(v==btnDelete){
-            myDatabaseHelper.deleteAllData();
+            rp.getMyDatabaseHelper().deleteAllData();
         }
 
 

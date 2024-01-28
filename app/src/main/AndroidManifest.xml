@@ -13,11 +13,11 @@
         android:theme="@style/Theme.LastProject"
         tools:targetApi="31">
         <activity
-            android:name=".HomePage"
+            android:name=".UI.homePage.HomePage"
 
             android:exported="false" />
         <activity
-            android:name=".Register"
+            android:name=".UI.Register.Register"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

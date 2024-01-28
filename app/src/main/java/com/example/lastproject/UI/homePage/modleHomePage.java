@@ -1,6 +1,6 @@
 package com.example.lastproject;
 
-public class Modle {
+public class modleHomePage {
 
 
 
